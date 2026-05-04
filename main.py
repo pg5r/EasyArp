@@ -4,7 +4,9 @@ import threading
 import os
 from core import heart, selfie, help
 from core import sniff as core_sniff
+import platform
 
+os_name = platform.system()
 
 aliases = {}
 red_flag_aliases = ["arp" , "tell" , "that" , "sniff" , "every" , "for" , "ask" , "if" , "can" , "why" , "who" , "where" , "when" , "else" , "all" , "broadcast" , "-request" , "--request" , "-reply" , "--reply" , "request" , "reply" , "flag"]
@@ -31,7 +33,10 @@ def Terminal():
         if len(wrds) == 1:
 
             if str(wrds[0]) == "clear" or str(wrds[0]) == "clr":
-                os.system("cls")
+                if os_name == "Windows":
+                    os.system("cls")
+                elif os_name == "Linux":
+                    os.system("clear")
                 print(Fore.LIGHTBLACK_EX + logo)
                 print(Fore.YELLOW + "Python Based" + Fore.RESET + " - " + Fore.CYAN + "Version 1.0")
             elif str(wrds[0]) == "copyself":
