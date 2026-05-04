@@ -1,8 +1,12 @@
 import os
-import sys
 import subprocess
-import signal
+import platform
+
+os_name = platform.system()
 
 def CopySelf():
-    subprocess.run("cd ..", shell=True)
-    subprocess.run(["start", "launcher.bat"], shell=True)
+    os.chdir("..")
+    if os_name.lower() == "windows":
+        subprocess.run(["start", "launcher.bat"], shell=True)
+    else:
+        subprocess.run(["bash", "launcher.sh"])
