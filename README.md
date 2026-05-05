@@ -117,6 +117,7 @@ A library version of this project has been developed, allowing it to be used dir
 It can be installed via pip:
 ```bash
 pip install easyarp
+```
 
 ## Future Development
 
