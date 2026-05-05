@@ -139,7 +139,6 @@ Do NOT use it on networks without permission.
 ## 👤 Author
 
 **pg5r**
-Beginner-focused tool developer
 
 ---
 
