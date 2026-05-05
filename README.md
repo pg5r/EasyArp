@@ -111,6 +111,13 @@ Dependencies:
 
 ---
 
+## 📦 Python Library Version
+
+A library version of this project has been developed, allowing it to be used directly inside any Python project without a CLI interface.
+It can be installed via pip:
+```bash
+pip install easyarp
+
 ## Future Development
 
 This project is actively evolving. Planned improvements include:
