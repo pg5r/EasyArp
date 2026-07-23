@@ -133,7 +133,7 @@ def ArpAttack(dest: str , target: str , ticks: float , dur: float):
             else:
                 return "[ERROR] Invalid."
     else:
-        if dest.lower() == "broadcast" or dest == "ff:ff:ff:ff:ff:ff:
+        if dest.lower() == "broadcast" or dest == "ff:ff:ff:ff:ff:ff":
             dest_mac_comp = "ff:ff:ff:ff:ff:ff"
             dest_ip_comp = "255.255.255.255"
         else:
